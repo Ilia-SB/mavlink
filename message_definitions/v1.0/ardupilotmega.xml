@@ -1495,6 +1495,20 @@
       <field type="float" name="rpm1">RPM Sensor1.</field>
       <field type="float" name="rpm2">RPM Sensor2.</field>
     </message>
+    <!-- FishFinder -->
+    <message id="227" name = "FISHFINDER_DATA">
+      <description>FishFinder data.</description>
+      <field type="uint8_t" name="active">FishFinder active.</field>
+      <field type="float" units="cm" name="ff_depth">Depth.</field>
+      <field type="float" units="deg" name="ff_temp">Temperature.</field>
+      <field type="uint8_t" name="battery_level">Battery level.</field>
+    </message>
+    <message id="228" name = "FISHFINDER_FISH">
+      <description>FishFinder fish data.</description>
+      <field type="float" name="ff_small_fish_depth" units="cm">Small fish depth.</field>
+      <field type="float" name="ff_medium_fish_depth" units="cm">Medium fish depth.</field>
+      <field type="float" name="ff_large_fish_depth" units="cm">Large fish depth.</field>
+    </message>
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
     <message id="11000" name="DEVICE_OP_READ">
       <description>Read registers for a device.</description>
